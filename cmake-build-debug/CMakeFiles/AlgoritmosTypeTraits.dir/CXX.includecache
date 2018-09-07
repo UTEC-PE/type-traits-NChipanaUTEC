@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chip/Algoritmos y Estructuras de Datos/type-traits-NChipanaUTEC/dlist.h
+iterator.h
+/home/chip/Algoritmos y Estructuras de Datos/type-traits-NChipanaUTEC/iterator.h
+
+/home/chip/Algoritmos y Estructuras de Datos/type-traits-NChipanaUTEC/iterator.h
+node.h
+/home/chip/Algoritmos y Estructuras de Datos/type-traits-NChipanaUTEC/node.h
+
+/home/chip/Algoritmos y Estructuras de Datos/type-traits-NChipanaUTEC/main.cpp
+iostream
+-
+slist.h
+/home/chip/Algoritmos y Estructuras de Datos/type-traits-NChipanaUTEC/slist.h
+dlist.h
+/home/chip/Algoritmos y Estructuras de Datos/type-traits-NChipanaUTEC/dlist.h
+
+/home/chip/Algoritmos y Estructuras de Datos/type-traits-NChipanaUTEC/node.h
+
+/home/chip/Algoritmos y Estructuras de Datos/type-traits-NChipanaUTEC/slist.h
+iterator.h
+/home/chip/Algoritmos y Estructuras de Datos/type-traits-NChipanaUTEC/iterator.h
+

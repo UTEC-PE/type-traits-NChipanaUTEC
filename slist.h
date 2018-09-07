@@ -8,7 +8,9 @@ class SListIterator : public Iterator<T> {
     public: 
         SListIterator() : Iterator<T>() {};
         SListIterator(Node<T> *current) : Iterator<T>(current) {};
-        SListIterator<T> operator++();
+        SListIterator<T> operator++(){
+            this -> current = this->current->next;
+        }
 };
 
 template <typename Tr>
@@ -21,11 +23,13 @@ class SList {
     private:
         Node<T>* head;
         Operation cmp;
+        int nodes;
               
     public:
         SList() {
+            nodes = 0;
             head = nullptr;
-        };
+        }
 
         bool find(T search, Node<T> **&pointer) {
             // TODO
@@ -40,10 +44,16 @@ class SList {
         }  
              
         iterator begin() {
+            return iterator(head);
             // TODO
         }
              
         iterator end() {
+            auto* temp = head;
+            while(temp -> next != nullptr){
+                temp = temp -> next;
+            }
+            return iterator(temp);
             // TODO
         }
              

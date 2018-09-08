@@ -16,7 +16,7 @@ class Iterator {
             return *this;
         }
         bool operator!=(Iterator<T> other){
-            return current == other.current;
+            return current != other.current;
         }
         T operator*(){
             return current -> data;

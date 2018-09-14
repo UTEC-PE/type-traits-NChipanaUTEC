@@ -32,7 +32,7 @@ class SList {
             head = nullptr;
         }
 
-        bool find(T search, Node<T> **&pointer) {
+        bool find(T search, Node<T> **&pointer) { // Podría reducirse un poco
             for(int i = 0;i < nodes; i++){
                 if(cmp(search,(*pointer)-> data)){break;}
                 pointer = &((*pointer) -> next);
@@ -48,7 +48,7 @@ class SList {
             if(find(data,pointer)){return false;}
             else{
                 auto* temp = new Node<T>(data);
-                if(nodes == 0){
+                if(nodes == 0){ // No es necesario tener el caso base, estás repitiendo código
                     *pointer = temp;
                     temp -> next = nullptr;
                     nodes ++;
@@ -72,7 +72,7 @@ class SList {
             }
             else{
                 auto* temp=(*pointer)->next;
-                if(nodes == 1){
+                if(nodes == 1){ 
                     temp = *pointer;
                     *pointer = nullptr;
                     delete temp;
@@ -98,7 +98,7 @@ class SList {
             while(temp != nullptr){
                 temp = temp -> next;
             }
-            return iterator(temp);
+            return iterator(temp); // Bastaría con iterator(nullptr)
             // TODO
         }
 
